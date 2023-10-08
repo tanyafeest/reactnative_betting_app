@@ -2,6 +2,7 @@ import React, {PureComponent} from 'react'
 import {View,Text, TouchableOpacity} from 'react-native'
 import {oddConvert, viewStyles} from '../../common'
 import CustomIcon from '../customIcon';
+
 export  default class LiveBtn extends PureComponent {
     constructor(props) {
       super(props);
@@ -56,7 +57,7 @@ export  default class LiveBtn extends PureComponent {
             </Text>
             </View>
             </TouchableOpacity>}
-           <CustomIcon name="lock" size={20} style={{ display: game.is_blocked ? 'flex' : 'none',color:'#dedee0' }}></CustomIcon>
+           <CustomIcon name="lock" size={20} style={{ display: game.is_blocked ? 'flex' : 'none',color:'#dedee1' }}></CustomIcon>
            {!game.is_blocked && priceChanged &&<CustomIcon name={e.initialPrice ? (e.initialPrice > e.price) ? 'decrease':(e.initialPrice < e.price) ? 'increase' : '' : ''} size={15} style={[{position:'absolute',margin:0,padding:0},e.initialPrice ? (e.initialPrice > e.price) ? viewStyles.coeficiente_change_down:(e.initialPrice < e.price) ? viewStyles.coeficiente_change_up : {} : {}]}></CustomIcon>}
         
         </View>

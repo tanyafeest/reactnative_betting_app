@@ -1,7 +1,9 @@
 import React from 'react'
 import {View, Text, FlatList} from 'react-native'
 import { viewStyles, gridStyles } from '../../common'
-import CustomIcon from '../customIcon'
+import CustomIcon from '../customIcon' // Import Cutom Icon to use for beautiful UI. 
+
+
 
 export const SportListLoader = (props) => {
 

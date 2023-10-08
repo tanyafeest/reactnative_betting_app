@@ -7,6 +7,7 @@ import CustomIcon from '../../components/customIcon';
 import LinearGradient from 'react-native-linear-gradient';
 import RadialGradient from 'react-native-radial-gradient';
 import { Easing } from 'react-native-reanimated';
+
 let {width}= Dimensions.get('window')
 export default class LiveGamePreview extends PureComponent {
     constructor(props) {
@@ -2468,13 +2469,13 @@ const viewStyles = {
         1:{
             bullet1: {
                 transform: [{ scale: 1 }],
-                right: "17%",
-                bottom: '36%'
+                right: "18%",
+                bottom: '35%'
               },
               bullet2: {
                 transform: [{ scale: 0.95 }],
-                right: "22%",
-                bottom: '36%'
+                right: "21%",
+                bottom: '37%'
               },
               bullet3: {
                 transform: [{ scale: 0.9 }],

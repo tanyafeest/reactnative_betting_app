@@ -12,6 +12,7 @@ import { Help } from '../help'
 import API from '../../services/api'
 import Swiper from 'swiper'
 import AccountMenuOption from '../accountMenuOption'
+
 const $api = API.getInstance()
 export default class AccModal extends React.Component{
     constructor(props){

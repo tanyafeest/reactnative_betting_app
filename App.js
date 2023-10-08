@@ -223,6 +223,14 @@ export default class App extends PureComponent {
       3001: 'Currency not supported',
       3015: 'Negative amount',
       3019: 'Bet selections cannot be chained together',
+      50000: 'Failed to place bet, please try again later',
+      2434: 'Max withdrawal amount',
+      2436: 'Selection suspended before start time',
+      2437: 'Bonus not allowed for super bet',
+      3000: 'Too many invalid login attempts',
+      3001: 'Currency not supported',
+      3015: 'Negative amount',
+      3019: 'Bet selections cannot be chained together',
       50000: 'Failed to place bet, please try again later'
     }
     this.clearBetSelectionsTimeout=null
