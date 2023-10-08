@@ -4,6 +4,7 @@ import {Container, Content,Item,Label, List,ListItem, Right, Left, Body} from 'n
 import CustomIcon from '../customIcon';
 import { viewStyles } from '../../common';
 import { makeText } from '../../utils';
+
 export default class AccountScreen extends PureComponent {
     constructor(props){
         super(props)
@@ -159,7 +160,7 @@ export default class AccountScreen extends PureComponent {
 const styles= StyleSheet.create({
     profileHeader:{
        width:'100%',
-       backgroundColor:'#026775'
+       backgroundColor:'#026774'
     },
     userInfo:{
         width:'100%',
@@ -170,7 +171,7 @@ const styles= StyleSheet.create({
     },
     userInfoAvatar:{width:40,height:40,borderRadius:40,backgroundColor:'#065863',position: 'relative',flexDirection:'row',alignItems:'center',justifyContent:'center'},
     userBalanceContainer:{
-        backgroundColor:'#065863',
+        backgroundColor:'#065862',
         alignItems:'center',
         justifyContent:'space-between',
         padding:10
