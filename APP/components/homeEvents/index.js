@@ -5,6 +5,8 @@ import SelectableEventBtn from '../../components/selectableEventBtn'
 import {SportItem, SportsbookSportItem} from '../../components/stateless'
 import { View, ScrollView, StyleSheet,Text,LayoutAnimation, Platform ,UIManager, TouchableNativeFeedback} from 'react-native'
 import { SportsbookSportItemLoading, LiveEventLoader } from '../loader'
+
+// Identify Android or Mobile
 if (Platform.OS === 'android') {
   if (UIManager.setLayoutAnimationEnabledExperimental) {
     UIManager.setLayoutAnimationEnabledExperimental(true);
@@ -12,18 +14,12 @@ if (Platform.OS === 'android') {
 }
 export default class HomepageEvents extends PureComponent{
     constructor(props) {
-      super(props)
+      super(props)//transfer state from parent to child
       this.state = {
         activeID:null,
         hover:false
       }
       this.setSelectedSport = this.setSelectedSport.bind(this)
-    }
-    componentDidMount() {
-  
-    }
-    componentDidUpdate() {
-  
     }
     load(data){
       this.props.history.replace(`/sports/${this.props.is_live?'live':'prematch'}/${data.sport.alias}/${data.region.name}/${data.competition.id}/${data.game.id}`,{sport:data.sport,region:data.region,competition:data.competition,game:data.game})
@@ -180,7 +176,7 @@ export default class HomepageEvents extends PureComponent{
                     {
                       eventsArr.map((e,index)=>{ 
                         return (
-                          <SelectableEventBtn nth={index} showType={'home'} eventLen={eventsArr.length} key={e.id} betSelections={betSelections} game={d.game} market={d.market} data={e} sport={d.sport} competition={d.competition}eventLen={eventsArr.length} event_col={d.col_count} addEventToSelection={addEventToSelection}
+                          <SelectableEventBtn nth={index} showType={'home'} eventLen={eventsArr.length} key={e.id} betSelections={betSelections} game={d.game} market={d.market} data={e} sport={d.sport} competition={d.competition} eventLen={eventsArr.length} event_col={d.col_count} addEventToSelection={addEventToSelection}
                             oddType={oddType} />
                         )
                       })
@@ -201,6 +197,6 @@ export default class HomepageEvents extends PureComponent{
       marginBottom: 0,
       overflow: "hidden",
       flexShrink: 0,
-      color: "#fff"
+      color: "#ffg"
     }
   })
