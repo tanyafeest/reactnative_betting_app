@@ -70,6 +70,8 @@ export default class App extends PureComponent {
     this.autoGetBalance = this.autoGetBalance.bind(this)
     this.rids = { ...props.sportsbook.rids }
     this.subscriptions = {}
+    
+    //This is errors text for issues 
     this.swarmErrors = {
       '-1': 'Fialed',
       0: 'No error',
